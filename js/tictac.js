@@ -4,20 +4,21 @@ $(document).ready(function() {
 
   $('.square').on('click', function(event) {
     var squareSelected = $(this);
-
-    if (squareSelected.hasClass('ex') || squareSelected.hasClass('oh')) {
+    var ex = 'fa fa-times';
+    var oh = 'fa fa-circle-o';
+    if (squareSelected.hasClass(ex) || squareSelected.hasClass(oh)) {
       alert('This square has already been selected. Please select another.');
     } else {
       if (player === 1) {
-        squareSelected.addClass('ex');
-        if(checkIfPlayerWon('ex')) {
+        squareSelected.addClass(ex);
+        if(checkIfPlayerWon(ex)) {
           alert('Congrats! Player ' + player + ' has won!');
         } else {
           player = 2;
         }
       } else {
-        squareSelected.addClass('oh');
-        if(checkIfPlayerWon('oh')) {
+        squareSelected.addClass(oh);
+        if(checkIfPlayerWon(oh)) {
           alert('Congrats! Player ' + player + ' has won!');
         } else {
           player = 1;
