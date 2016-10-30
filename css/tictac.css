@@ -1,6 +1,6 @@
 #gameboard {
   width: 360px;
-  margin: 0 auto;
+  margin: 40px auto 0px auto;
 }
 
 .row {
@@ -10,6 +10,14 @@
 
 .square {
   float: left;
-  width: 120px;
-  height: 120px;
+  width: 119px;
+  height: 119px;
+}
+
+.bottom {
+  border-bottom: 1px solid black;
+}
+
+.right {
+  border-right: 1px solid black;
 }
