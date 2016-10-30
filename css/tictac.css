@@ -12,6 +12,7 @@
   float: left;
   width: 119px;
   height: 119px;
+  cursor: pointer;
 }
 
 .bottom {
@@ -20,4 +21,12 @@
 
 .right {
   border-right: 1px solid black;
+}
+
+.ex {
+  background-color: red;
+}
+
+.oh {
+  background-color: blue;
 }
